@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "plot-armor",
+	"version": "${version}",
+	"name": "Plot Armor",
+	"description": "Add Plot Armor",
+	"authors": [
+		"DEAMJAVA"
+	],
+	"contact": {
+		"homepage": "https://github.com/DEAMJAVA/PlotArmor",
+		"sources": "https://github.com/DEAMJAVA/PlotArmor"
+	},
+	"license": "GPLv3",
+	"icon": "assets/plot-armor/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "net.deamjava.plotarmor.PlotArmor",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"plot-armor.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
